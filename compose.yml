@@ -1,0 +1,13 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      # The target can be change to production
+      target: development
+    expose:
+      - "8000"
+    volumes:
+      - type: bind
+        source: src
+        target: /var/app
