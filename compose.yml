@@ -12,5 +12,5 @@ services:
         source: src
         target: /var/app
       - type: bind
-        source: django-app-demo
-        target: /mnt/django-app-demo
+        source: django-app-demo/src/django_app_demo
+        target: /var/app/django_app_demo
