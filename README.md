@@ -14,6 +14,7 @@ This is a minimal working example of a Django site using a [Django reusable apps
     ```bash
     docker compose up
     ```
+3.  Open http://localhost:8000/ with your web browser.
 
 ## Limitations
 
