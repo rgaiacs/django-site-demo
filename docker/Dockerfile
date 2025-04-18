@@ -31,8 +31,6 @@ COPY ./docker/pip.list /tmp
 RUN grep -v "^#" /tmp/pip.list | xargs python -m pip install --no-cache-dir
 
 COPY ./docker/createsuperuser.sh /usr/bin/createsuperuser.sh
-COPY ./docker/export-data.sh /usr/bin/export-data.sh
-COPY ./docker/import-data.sh /usr/bin/import-data.sh
 
 # From Docker documentation at https://docs.docker.com/reference/dockerfile/#cmd
 # 
